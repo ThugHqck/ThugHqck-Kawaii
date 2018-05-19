@@ -1,0 +1,18 @@
+{
+  "name": "",
+  "dependencies": {
+    "cleverbot.io": "^1.0.4",
+    "discord.js": "^11.3.2",
+    "express": "^4.16.3",
+    "gif-search": "^2.0.1",
+    "google-translate-api": "^2.3.0",
+    "mathjs": "^4.2.2",
+    "opusscript": "0.0.6",
+    "os-utils": "0.0.14",
+    "request": "^2.85.0",
+    "simple-youtube-api": "^5.0.2",
+    "weather-js": "^2.0.0",
+    "ytdl-core": "^0.20.2"
+  },
+  "version": ""
+}
