@@ -1,0 +1,16 @@
+var discord = require ('discord.js')
+exports.run = (client,message,args)=> {
+    if(message.channel.nsfw == false) return message.reply("esse comando só funciona em canais nsfw")
+var falas = ['https://images.sex.com/images/pinporn/2018/05/04/300/19441155.gif','https://images.sex.com/images/pinporn/2018/04/13/300/19361342.gif','https://images.sex.com/images/pinporn/2018/04/12/300/19359404.gif','https://images.sex.com/images/pinporn/2018/04/08/300/19345808.gif','https://images.sex.com/images/pinporn/2018/04/20/300/19390337.gif','https://images.sex.com/images/pinporn/2018/04/18/300/19383814.gif','https://images.sex.com/images/pinporn/2014/08/29/300/7702044.gif','https://images.sex.com/images/pinporn/2014/08/29/300/7702069.gif','https://images.sex.com/images/pinporn/2014/08/27/300/7659231.gif','https://images.sex.com/images/pinporn/2014/08/29/300/7702035.gif','https://images.sex.com/images/pinporn/2014/08/31/300/7742700.gif','https://images.sex.com/images/pinporn/2014/09/04/300/7809022.gif','https://images.sex.com/images/pinporn/2014/09/18/300/8044230.gif','https://images.sex.com/images/pinporn/2014/10/05/300/8368611.gif','https://images.sex.com/images/pinporn/2017/05/22/300/17800842.gif','https://images.sex.com/images/pinporn/2017/05/23/300/17806039.gif','https://images.sex.com/images/pinporn/2018/03/19/300/19261870.gif','https://images.sex.com/images/pinporn/2018/04/09/300/19347581.gif','https://images.sex.com/images/pinporn/2018/04/12/300/19360807.gif','https://images.sex.com/images/pinporn/2018/04/09/300/19349106.gif','https://images.sex.com/images/pinporn/2018/05/05/300/19443967.gif','https://images.sex.com/images/pinporn/2018/04/21/300/19394989.gif','https://images.sex.com/images/pinporn/2018/04/07/300/19338698.gif','https://images.sex.com/images/pinporn/2018/04/17/300/19378846.gif','https://images.sex.com/images/pinporn/2018/05/01/300/19430391.gif','https://images.sex.com/images/pinporn/2018/04/13/300/19363803.gif','https://cdn.nekos.life/Random_hentai_gif/Random_hentai_gifNB_1335.gif','https://cdn.nekos.life/Random_hentai_gif/Random_hentai_gifNB_0327.gif','https://cdn.nekos.life/Random_hentai_gif/Random_hentai_gifNB_0108.gif','https://cdn.nekos.life/Random_hentai_gif/Random_hentai_gifNB_1013.gif','https://cdn.nekos.life/Random_hentai_gif/Random_hentai_gifNB_1613.gif','https://cdn.nekos.life/Random_hentai_gif/Random_hentai_gifNB_0445.gif','https://cdn.nekos.life/Random_hentai_gif/Random_hentai_gifNB0520.gif','https://cdn.nekos.life/Random_hentai_gif/Random_hentai_gifNB_0113.gif','https://cdn.nekos.life/Random_hentai_gif/Random_hentai_gifNB_1617.gif','https://cdn.nekos.life/Random_hentai_gif/Random_hentai_gifNB0122.gif','https://cdn.nekos.life/Random_hentai_gif/Random_hentai_gifNB0029.gif','https://cdn.nekos.life/Random_hentai_gif/Random_hentai_gifNB_0693.gif'];
+
+    var embed = new discord.RichEmbed()
+    .setTitle("Gif De Hentai")
+    .setColor("0xE57380")
+    .setImage(falas[Math.round(Math.random()*falas.length-1)])
+    .setTimestamp()
+    .setFooter("Adulto",client.user.avatarURL)
+ 
+ 
+     message.channel.send(embed)
+
+}

@@ -1,0 +1,1 @@
+exports.run=function(c,a){a.channel.send("Claro!").then(function(b){b.edit("Pong :ping_pong:  `"+(b.createdTimestamp-a.createdTimestamp)+"ms`")})};
